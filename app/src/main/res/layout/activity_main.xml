@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Titre centré en haut -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INFO 4077"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <!-- Premier bouton centré -->
+    <Button
+        android:id="@+id/hello_world_button"
+        android:layout_width="220dp"
+        android:layout_height="54dp"
+        android:text="Hello World"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Deuxième bouton centré -->
+    <Button
+        android:id="@+id/formulaire_button"
+        android:layout_width="226dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Formulaire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hello_world_button" />
+
+    <Button
+        android:id="@+id/database_button"
+        android:layout_width="226dp"
+        android:layout_height="48dp"
+        android:text="Database"
+        app:layout_constraintTop_toBottomOf="@id/formulaire_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/crud_button"
+        android:layout_width="226dp"
+        android:layout_height="48dp"
+        android:text="CRUD"
+        app:layout_constraintTop_toBottomOf="@id/database_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="226dp"
+        android:layout_height="48dp"
+        android:text="Camera"
+        app:layout_constraintTop_toBottomOf="@id/crud_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/sound_button"
+        android:layout_width="226dp"
+        android:layout_height="48dp"
+        android:text="Sound"
+        app:layout_constraintTop_toBottomOf="@id/camera_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/chat_button"
+        android:layout_width="226dp"
+        android:layout_height="48dp"
+        android:text="Chat"
+        app:layout_constraintTop_toBottomOf="@id/sound_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/client_server_button"
+        android:layout_width="226dp"
+        android:layout_height="48dp"
+        android:text="Client Server"
+        app:layout_constraintTop_toBottomOf="@id/chat_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

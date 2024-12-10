@@ -17,6 +17,10 @@ android {
     }
 
     buildTypes {
+        repositories {
+            google()
+            mavenCentral()
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
